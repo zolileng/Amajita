@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA Squad Leaderboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>FIFA Squad Leaderboard (FC25/26)</h1>
+  </header>
+
+  <main>
+    <!-- Leaderboard Table -->
+    <div style="overflow-x: auto;">
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+            <th>Games Played</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Losses Display Section -->
+    <section id="losses-display"></section>
+
+    <!-- Manual Match Update Form -->
+    <section>
+      <h2>Manually Update Match Result</h2>
+      <form id="match-update-form">
+        <label for="input1">Player 1:</label>
+        <input type="text" id="input1" placeholder="Enter Player 1 (e.g., Sam)" required />
+
+        <label for="input2">Player 2:</label>
+        <input type="text" id="input2" placeholder="Enter Player 2 (e.g., Nkosi)" required />
+
+        <label for="input3">Match Result:</label>
+        <select id="input3" required>
+          <option value="">Select Result</option>
+          <option value="player1">Player 1 Wins</option>
+          <option value="player2">Player 2 Wins</option>
+          <option value="draw">Draw</option>
+        </select>
+
+        <button type="submit">Update Match</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Link to main JS logic -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

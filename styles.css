@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd; /* Border around the table */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd; /* Border around the cells */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+thead {
+    background-color: #222;
+}
+
+/* Section styling for displaying losses */
+#losses-display {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#losses-display h3 {
+    margin-top: 0;
+}
+
+/* Buttons styling */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Slightly smaller text */
+    }
+
+    /* Make the table horizontally scrollable on smaller screens */
+    #leaderboard {
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    /* Make the loss display section responsive */
+    #losses-display {
+        padding: 15px;
+    }
+}
+
+/* Additional mobile-friendly tweaks */
+@media (max-width: 480px) {
+    table {
+        font-size: 12px; /* Make text even smaller on very small screens */
+    }
+
+    /* Ensure button text fits on small screens */
+    button {
+        padding: 8px 16px;
+    }
+
+    /* Slightly reduce the padding in the losses display for very small screens */
+    #losses-display {
+        padding: 12px;
+    }
+}
