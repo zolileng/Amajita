@@ -2,7 +2,7 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 // 🔐 Supabase credentials (replace with yours)
 const supabaseUrl = "https://quvjivpaggshwekscbmy.supabase.co";
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF1dmppdnBhZ2dzaHdla3NjYm15Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxNjgwOTMsImV4cCI6MjA2Nzc0NDA5M30.nCEPyMpbrEVEuoG7kMBIAiKZ5BEWrPIiVigANHAm7kM";
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 let players = [];
